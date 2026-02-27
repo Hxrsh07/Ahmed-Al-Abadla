@@ -3,12 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
     return (
-        <section id="about" className="w-full bg-background-light text-primary-dark pt-32 pb-24 px-6 md:px-12 rounded-t-[3rem] -mt-10 relative z-20">
-
-            {/* Arch Image masked */}
-            <div className="absolute top-10 left-1/2 -translate-x-1/2 -translate-y-[40%] md:-translate-y-[50%] w-64 md:w-96 aspect-[3/4] arch-mask overflow-hidden md:block">
-                <img src="/profile.png" alt="Ahmed Al Abadla" className="w-full h-full object-cover" />
-            </div>
+        <section id="about" className="w-full bg-background-light text-primary-dark pt-2 pb-24 px-6 md:px-12 rounded-t-[3rem] -mt-10 relative z-20">
 
             <div className="max-w-7xl mx-auto mt-24 md:mt-48 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 items-start">
 
@@ -16,30 +11,35 @@ export default function About() {
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "-30px" }}
                     transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
                     className="flex flex-col gap-6"
                 >
                     <span className="uppercase tracking-widest text-sm font-bold text-secondary">
-                        I'm Ahmed Al Abadla
+                        About Me
                     </span>
-                    <h2 className="text-4xl md:text-6xl font-display font-medium leading-tight">
-                        <span className="italic font-light">I'm</span> DETERMINED <span className="italic font-light">to</span> HELP <span className="italic font-light">you</span> UNLOCK <span className="italic font-light">your</span> POSSIBILITIES.
+                    <h2 className="text-4xl md:text-5xl font-display font-medium leading-tight text-primary-dark">
+                        Ahmed Al Abadla is a <span className="italic font-light">Dubai-based entrepreneur</span> and business leader.
                     </h2>
-                    <p className="text-lg text-secondary leading-relaxed max-w-md mt-6">
-                        I am a visionary founder and strategic leader based in Dubai, UAE, with a proven track record of building and scaling impactful ventures.
-                    </p>
-                    <p className="font-bold text-lg">
-                        And help others do the same.
-                    </p>
 
-                    <div className="mt-8">
-                        <button className="px-10 py-5 bg-accent text-white uppercase tracking-widest text-xs font-bold hover:bg-opacity-90 transition-all flex items-center gap-4 group">
-                            More About Me
-                            <svg width="30" height="12" viewBox="0 0 30 12" fill="none" className="transform group-hover:translate-x-2 transition-transform">
-                                <path d="M29.5303 6.53033C29.8232 6.23744 29.8232 5.76256 29.5303 5.46967L24.7574 0.696699C24.4645 0.403806 23.9896 0.403806 23.6967 0.696699C23.4038 0.989593 23.4038 1.46447 23.6967 1.75736L27.9393 6L23.6967 10.2426C23.4038 10.5355 23.4038 11.0104 23.6967 11.3033C23.9896 11.5962 24.4645 11.5962 24.7574 11.3033L29.5303 6.53033ZM0 6.75H29V5.25H0V6.75Z" fill="currentColor" />
-                            </svg>
-                        </button>
+                    <div className="mt-8 text-secondary/90 space-y-4 font-light leading-relaxed text-lg">
+                        <p>
+                            With experience spanning telecommunications, government affairs, and operations, he is the Founder of Smooth and Teralink, where he focuses on delivering practical, technology-driven solutions that support business growth and operational efficiency.
+                        </p>
+                        <p>
+                            With a background in industrial engineering and an MBA, Ahmed combines technical expertise with strategic thinking to build sustainable ventures and long-term partnerships.
+                        </p>
+                    </div>
+
+                    <div className="mt-12">
+                        <h3 className="uppercase tracking-widest text-sm font-bold text-accent mb-6">I’m expert into:</h3>
+                        <ul className="space-y-4 text-secondary/90 text-lg font-light list-disc pl-5">
+                            <li>Telecom & Connectivity Solutions</li>
+                            <li>Business Development & Partnerships</li>
+                            <li>Entrepreneurship & Venture Building</li>
+                            <li>Government Affairs & Stakeholder Management</li>
+                            <li>Operations & Process Optimization</li>
+                        </ul>
                     </div>
                 </motion.div>
 
@@ -49,17 +49,21 @@ export default function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 1, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
-                    className="space-y-8 text-base md:text-lg text-secondary/90 leading-relaxed font-light mt-12 md:mt-32 border-l border-primary-dark/10 pl-8"
+                    className="space-y-12 mt-12 md:mt-24"
                 >
-                    <p>
-                        With a strong foundation in Industrial Engineering and a Master's in Business Administration, I bridge the gap between technical optimization and strategic business growth. It's not just about positive thinking—it's about a firm belief that success goes to the most determined, not necessarily the most talented.
-                    </p>
-                    <p>
-                        Currently, I lead multiple initiatives including Smooth and Teralink as Founder, focusing on delivering innovative solutions and driving enterprise success.
-                    </p>
-                    <p>
-                        Most recently, I served as Manager of Government Affairs at Al Masaood, where I built key partnerships and navigated complex multi-sector landscapes in Abu Dhabi. I've found ways to build successful ventures by simply sharing what I've learned and creating resilient frameworks.
-                    </p>
+                    <div className="border-l border-primary-dark/10 pl-8">
+                        <h3 className="uppercase tracking-widest text-xs font-bold text-accent block mb-4">My Career Background</h3>
+                        <p className="text-base md:text-lg text-secondary/90 leading-relaxed font-light">
+                            Prior to entrepreneurship, Ahmed worked in government affairs and operations roles at Al Masaood, gaining experience in regulatory coordination, cross-sector collaboration, and operational leadership. His early career as an operations engineer built a strong foundation in systems thinking and execution.
+                        </p>
+                    </div>
+
+                    <div className="border-l-4 border-accent pl-8 py-2">
+                        <h3 className="uppercase tracking-widest text-xs font-bold text-accent block mb-4">This Is My Philosophy</h3>
+                        <blockquote className="text-2xl md:text-3xl font-display font-light italic leading-snug text-primary-dark">
+                            “I believe sustainable businesses are built at the intersection of technology, people, and execution. My focus is on creating solutions that are practical, scalable, and built for long-term impact.”
+                        </blockquote>
+                    </div>
                 </motion.div>
 
             </div>

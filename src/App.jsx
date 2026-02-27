@@ -4,9 +4,8 @@ import Footer from './components/Footer';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Experience from './sections/Experience';
-import Education from './sections/Education';
-import Certifications from './sections/Certifications';
 import Contact from './sections/Contact';
+import Awards from './sections/Awards';
 
 function App() {
   return (
@@ -16,8 +15,7 @@ function App() {
         <Hero />
         <About />
         <Experience />
-        <Education />
-        <Certifications />
+        <Awards />
         <Contact />
       </main>
       <Footer />

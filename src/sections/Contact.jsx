@@ -24,7 +24,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="w-full bg-background-light text-primary-dark py-32 relative z-20 rounded-t-[3rem] -mt-10 mb-[-1px]">
+        <section id="contact" className="w-full bg-background-dark text-primary-dark-32 relative z-20 rounded-t-[3rem] -mt-10 mb-[-1px] pt-24 pb-32 px-6 md:px-12">
             <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
 
                 {/* Contact Info Header */}

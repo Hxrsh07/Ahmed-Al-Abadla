@@ -20,47 +20,76 @@ export default function Hero() {
     };
 
     return (
-        <section id="hero" className="relative w-full min-h-screen bg-background-dark text-primary-light flex flex-col justify-center items-center pt-24 pb-16 px-6 overflow-hidden">
+        <section id="hero" className="relative w-full min-h-[90vh] lg:min-h-screen bg-background-dark text-primary-light flex items-center pt-32 pb-16 px-6 overflow-hidden">
 
             {/* Background ambient light */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-accent/10 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/3 -left-1/4 w-full max-w-4xl h-96 bg-accent/20 blur-[150px] rounded-full pointer-events-none" />
 
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center text-center mt-12 md:mt-24"
+                className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center"
             >
-                <motion.div variants={itemVariants} className="mb-4">
-                    <span className="uppercase tracking-widest text-xs md:text-sm text-accent font-semibold">
-                        Founder & Visionary Leader
-                    </span>
-                </motion.div>
+                {/* Left Column: Text Content */}
+                <div className="flex flex-col items-start text-left order-2 lg:order-1 mt-12 lg:mt-0">
+                    <motion.div variants={itemVariants} className="mb-6">
 
-                {/* Massive Typography matching reference */}
-                <motion.h1 variants={itemVariants} className="text-6xl md:text-9xl lg:text-[11rem] font-display font-medium tracking-tight leading-[0.9] text-white flex flex-col items-center py-20">
-                    <span className="uppercase">AHMED</span>
-                    <span className="text-outline italic font-light lowercase mt-[-2%] ml-[10%] drop-shadow-2xl z-20">Al Abadla</span>
-                </motion.h1>
+                    </motion.div>
 
-
-                <motion.div variants={itemVariants} className="flex gap-6 mt-8 pb-60">
-                    <Link
-                        to="experience"
-                        smooth={true}
-                        duration={800}
-                        className="flex items-center gap-4 px-8 py-4 bg-white text-black font-semibold uppercase tracking-widest text-xs hover:bg-white/90 transition-colors cursor-pointer"
+                    {/* Typography */}
+                    <motion.h1
+                        variants={itemVariants}
+                        className="text-6xl md:text-8xl lg:text-[9rem] font-display font-medium tracking-tight leading-[0.9] text-white flex flex-col items-start py-8"
                     >
-                        How I Work
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="ml-2">
-                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </Link>
+                        <span className="uppercase z-30">AHMED</span>
+                        <span className="flex flex-col items-center text-outline italic font-light lowercase mt-[-4%] ml-[10%] lg:ml-[20%] drop-shadow-2xl z-20">
+                            <span>al</span>
+                            <span>abadla</span>
+                        </span>
+
+                        <span className="uppercase tracking-widest text-lg md:text-lg text-accent font-semibold mt-10">
+                            Founder | Telecom & Business Solutions Leader
+                        </span>
+                    </motion.h1>
+
+                    <motion.div variants={itemVariants} className="mt-6 max-w-xl pr-4">
+                        <p className="text-xl md:text-2xl font-display font-light leading-snug text-white/90">
+                            Building scalable telecom and business solutions that empower organizations to operate smarter and grow faster across the UAE.
+                        </p>
+                    </motion.div>
+
+                    <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 mt-12 w-full sm:w-auto">
+                        <a
+                            href="https://www.linkedin.com/in/ahmed-al-abadla"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center px-8 py-4 bg-white text-black font-semibold uppercase tracking-widest text-xs hover:bg-white/90 transition-colors cursor-pointer text-center"
+                        >
+                            Connect on LinkedIn
+                        </a>
+                    </motion.div>
+                </div>
+
+                {/* Right Column: Profile Image */}
+                <motion.div
+                    initial={{ opacity: 0, x: 50, scale: 0.95 }}
+                    animate={{ opacity: 1, x: 0, scale: 1 }}
+                    transition={{ duration: 1.2, delay: 0.6, ease: [0.25, 1, 0.5, 1] }}
+                    className="order-1 lg:order-2 w-full h-[400px] md:h-[600px] lg:h-[750px] relative mt-10 lg:mt-0 px-4 lg:px-0"
+                >
+                    <div className="w-full h-full rounded-2xl overflow-hidden relative z-10">
+                        <img
+                            src="/profile.png"
+                            alt="Ahmed Al Abadla"
+                            className="w-full h-full object-cover object-top grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-700"
+                        />
+                    </div>
+                    {/* Decorative element behind image */}
+                    <div className="absolute -inset-4 border border-white/20 rounded-2xl -z-10 translate-x-4 translate-y-4"></div>
                 </motion.div>
+
             </motion.div>
-
-
-
         </section>
     );
 }

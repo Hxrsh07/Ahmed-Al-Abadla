@@ -6,23 +6,16 @@ export default function Experience() {
     {
       role: "Founder",
       company: "Smooth",
-      date: "Jan 2026 – Present",
+      date: "2026 – Present",
       location: "Dubai, UAE",
-      description: "Leading strategic initiatives and driving enterprise growth with innovative business frameworks."
+      description: "Leading the development of innovative business solutions focused on efficiency, simplicity, and scalable growth."
     },
     {
       role: "Founder",
       company: "Teralink",
-      date: "Jul 2024 – Present",
+      date: "2024 – Present",
       location: "Dubai, UAE",
-      description: "Establishing a strong foundation for sustainable tech solutions in the Middle East."
-    },
-    {
-      role: "Manager, Government Affairs (Multi Sector)",
-      company: "Al Masaood",
-      date: "Dec 2023 – Jun 2024",
-      location: "Abu Dhabi Emirate, UAE",
-      description: "Orchestrated complex stakeholder relationships and navigated multi-sector governmental landscapes to ensure business continuity and strategic alignment."
+      description: "Founder of Teralink, a Dubai-based authorized channel partner for Etisalat by e&, delivering tailored telecom solutions to businesses across the UAE."
     }
   ];
 
@@ -31,8 +24,8 @@ export default function Experience() {
 
       {/* Massive Watermark Text */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none select-none z-0">
-        <h2 className="text-[15vw] font-display font-bold text-white/[0.03] whitespace-nowrap leading-none tracking-tighter">
-          EXPERIENCE
+        <h2 className="text-[12vw] font-display font-bold text-white/[0.03] whitespace-nowrap leading-none tracking-tighter">
+          LEADERSHIP
         </h2>
       </div>
 
@@ -46,10 +39,10 @@ export default function Experience() {
             transition={{ duration: 0.8 }}
           >
             <span className="uppercase tracking-widest text-sm font-bold text-accent mb-4 block">
-              Professional Journey
+              My Current Leadership
             </span>
             <h3 className="text-4xl md:text-6xl font-display font-light">
-              Where I've <span className="italic font-medium">Built</span>.
+              Where I <span className="italic font-medium">Lead</span>.
             </h3>
           </motion.div>
         </div>
