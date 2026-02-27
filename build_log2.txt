@@ -1,0 +1,107 @@
+﻿
+> temp-app@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 11 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 952ms
+At C:\Program Files\nod
+ejs\npm.ps1:29 char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ([31mΓ£ù[39m   
+  Build failed in 9    
+52ms:String) [], R    
+emoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+[31merror during 
+build:
+[31m[vite]: Rollup 
+failed to resolve 
+import "lucide-react" 
+from 
+"C:/Users/Harshith Gaut
+am/Desktop/demowork/src
+/components/Navbar.jsx"
+.
+This is most likely 
+unintended because it 
+can break your 
+application at runtime.
+If you do want to 
+externalize this 
+module explicitly add 
+it to
+`build.rollupOptions.ex
+ternal`[31m
+    at viteLog (file://
+/C:/Users/Harshith%20Ga
+utam/Desktop/demowork/n
+ode_modules/vite/dist/n
+ode/chunks/config.js:33
+635:57)
+    at file:///C:/Users
+/Harshith%20Gautam/Desk
+top/demowork/node_modul
+es/vite/dist/node/chunk
+s/config.js:33669:73
+    at onwarn (file:///
+C:/Users/Harshith%20Gau
+tam/Desktop/demowork/no
+de_modules/@vitejs/plug
+in-react/dist/index.js:
+76:7)
+    at file:///C:/Users
+/Harshith%20Gautam/Desk
+top/demowork/node_modul
+es/vite/dist/node/chunk
+s/config.js:33669:28
+    at onRollupLog (fil
+e:///C:/Users/Harshith%
+20Gautam/Desktop/demowo
+rk/node_modules/vite/di
+st/node/chunks/config.j
+s:33664:63)
+    at onLog (file:///C
+:/Users/Harshith%20Gaut
+am/Desktop/demowork/nod
+e_modules/vite/dist/nod
+e/chunks/config.js:3346
+7:4)
+    at file:///C:/Users
+/Harshith%20Gautam/Desk
+top/demowork/node_modul
+es/rollup/dist/es/share
+d/node-entry.js:20981:3
+2
+    at Object.logger 
+[as onLog] (file:///C:/
+Users/Harshith%20Gautam
+/Desktop/demowork/node_
+modules/rollup/dist/es/
+shared/node-entry.js:22
+968:9)
+    at ModuleLoader.han
+dleInvalidResolvedId (f
+ile:///C:/Users/Harshit
+h%20Gautam/Desktop/demo
+work/node_modules/rollu
+p/dist/es/shared/node-e
+ntry.js:21712:26)
+    at file:///C:/Users
+/Harshith%20Gautam/Desk
+top/demowork/node_modul
+es/rollup/dist/es/share
+d/node-entry.js:21670:2
+6[39m
+

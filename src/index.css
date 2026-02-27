@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background-dark text-primary-light font-sans antialiased selection:bg-accent/40 selection:text-primary-dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    color: transparent;
+  }
+
+  .text-outline-dark {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+    color: transparent;
+  }
+
+  .luxury-button {
+    @apply relative overflow-hidden transition-all duration-300 border border-current hover:bg-current hover:text-white;
+  }
+
+  /* Arch shape clip-path */
+  .arch-mask {
+    border-top-left-radius: 999px;
+    border-top-right-radius: 999px;
+  }
+}
